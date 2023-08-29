@@ -29,8 +29,20 @@ function generatePassword() {
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+  var chosenCharacterSet = ' ';
+  var length = getPasswordLength
+var characterSets = {
+  lowercase: 'abcdefghijklmnopqrstuvwxyz',
+  uppercase: 'abcdefghijklmnopqrstuvwxyz'.toUpperCase(),
+  special: '!@#$%^&*()_+'
+  numerical:'1234567890'
+};
+
+for (var i = 0; i < Object.keys(characterSets).length; i++) {
+  if (confirm('Would you like to use '+ key + ' characters?')){
+  chosenCharacterSet += characterSets[key];
+  }
+}
 
   passwordText.value = password;
 }
