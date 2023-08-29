@@ -1,6 +1,6 @@
 # random-password-generator
 
-## The Module 3 Challenge is to fix the random password generator 
+## The Module 3 Challenge is to fix the random password generator with javascript so it will generate a random password with a set of variables selected by the user such as length and included characters.
 
 
 ## Table of Contents
@@ -16,14 +16,16 @@ Clone the repository to your machine in a new Github repo. Copy all the files an
 
 ## Usage
 
-This page can be used as a template for your own personal portfolio if you wish.
+This page can be used to generate a random password as you need
 
-![alt text](assets/images/portfolio-screenshot.jpg)
+deployed site: https://clarissafuller.github.io/random-password-generator/
+
+![alt text](assets/03-javascript-homework-demo.png)
 
   
 ## Credits
 
-Many thanks to my bootcamp teachers for helping me out with this!
+Many thanks to my bootcamp teachers and the tutors for helping me out with this!
 
 ## License
 
