@@ -13,8 +13,9 @@ function writePassword() {
 }
 
 function getPasswordLength() {
-  var length =
-    parseInt[prompt("How long would you like your password to be? (8-128")];
+  var length = parseInt(
+    prompt("How long would you like your password to be? (8-128")
+  );
   if (length < 8 || length > 128) {
     alert("Length must be 8-128 characters long.");
     return getPasswordLength();
@@ -34,10 +35,14 @@ function generatePassword() {
   };
 
   for (var i = 0; i < Object.keys(characterSets).length; i++) {
-    if (confirm("Would you like to use " + key + " characters?")) {
-      chosenCharacterSet += characterSets[key];
-    }
+    var key = Object.keys(characterSets)[i];
+    chosenCharacterSet += confirm(
+      "Would you like to use " + key + " characters?"
+    )
+      ? characterSets[key]
+      : " ";
   }
+
   var password = " ";
 
   for (var i = 0; i < length; i++)
@@ -51,3 +56,4 @@ function generatePassword() {
 //USER INTERACTIONS===============================================
 // Add event listener to generate button
 generateBtn.addEventListener("click", generatePassword);
+writePassword();
