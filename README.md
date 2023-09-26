@@ -1,6 +1,6 @@
 # random-password-generator
 
-## The Module 3 Challenge is to fix the random password generator with javascript so it will generate a random password with a set of variables selected by the user such as length and included characters.
+## The Module 3 Challenge is to build a command-line application from scratch to manage a company's employee database, using Node.js, Inquirer, and MySQL.
 
 
 ## Table of Contents
